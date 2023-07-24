@@ -1,0 +1,19 @@
+{
+  "search.exclude": {
+    "**/obj": true
+  },
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  "[csharp]": {
+    "editor.rulers": [
+      {
+        "column": 120,
+        "color": "#242424"
+      }
+    ],
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+  },
+  "omnisharp.enableRoslynAnalyzers": true,
+}

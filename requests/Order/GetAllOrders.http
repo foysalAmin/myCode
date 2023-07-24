@@ -1,0 +1,7 @@
+@host=https://localhost:5200
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTRjMjQ2Ny1lNGEyLTRkMzUtOGY4Ni04YWM4NDU1OWZhMTAiLCJnaXZlbl9uYW1lIjoiTWQuIEFyYWZhdCBSYWhtYW4iLCJmYW1pbHlfbmFtZSI6IlJhbmEiLCJqdGkiOiI2ZTE4ZWYzOC01M2NiLTQwZTktOTNjMS04NjNmMWVmMDU5ZWEiLCJleHAiOjE2OTAwMTgyMzgsImlzcyI6IkVjb21QdWJsaWNBcGkiLCJhdWQiOiJFY29tUHVibGljQXBpIn0.4T8euAN_zRyOX7QdFrxSoE0pKOE7Wx8aQVe4yXYQNYQ
+
+
+GET {{host}}/orders
+Content-Type: application/json
+Authorization: bearer {{token}}

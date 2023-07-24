@@ -1,0 +1,13 @@
+@host=https://localhost:5200
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTRjMjQ2Ny1lNGEyLTRkMzUtOGY4Ni04YWM4NDU1OWZhMTAiLCJnaXZlbl9uYW1lIjoiTWQuIEFyYWZhdCBSYWhtYW4iLCJmYW1pbHlfbmFtZSI6IlJhbmEiLCJqdGkiOiJiNjhlYjFkNC0xMjZhLTQ0Y2EtYjk2MC1lOWI0Mzg4YmI1OWQiLCJleHAiOjE2OTAwMDYzODksImlzcyI6IkVjb21QdWJsaWNBcGkiLCJhdWQiOiJFY29tUHVibGljQXBpIn0.oPO18G7fv4MQ5U6kNX2A3SUuxlOksvL5aUkuVWjv7W8
+
+POST {{host}}/products/create
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+  "name": "Computer",
+  "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+  "currency": "USD",
+  "price": "500.00"
+}

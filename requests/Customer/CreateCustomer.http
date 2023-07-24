@@ -1,0 +1,19 @@
+@host=https://localhost:5200
+
+POST {{host}}/customers/create
+Content-Type: application/json
+
+{
+  "firstName": "Md. Azmat Rahman",
+  "lastName": "Russid",
+  "email": "azmat@cus.com",
+  "password": "aranab1232!",
+  "address": {
+    "phoneNumber": "+123111313",
+    "street": "some street",
+    "city" : "any city",
+    "state": "any state",
+    "zipCode": "a11211",
+    "country": "any country"
+  }
+}

@@ -1,0 +1,7 @@
+@host=https://localhost:5200
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTFkN2JmZC03N2ViLTRiNTctOWVmZC05NmViMjBhZWQ1MmYiLCJnaXZlbl9uYW1lIjoiTWQuIEFtYW5hdCBSYWhtYW4iLCJmYW1pbHlfbmFtZSI6IlJ1c3NlbCIsImp0aSI6ImNiMDc3NTRiLTZlMjQtNDhlZi1iOWM2LWRmOTYxODRlN2FhYSIsImV4cCI6MTY5MDAxMDEwNywiaXNzIjoiRWNvbVB1YmxpY0FwaSIsImF1ZCI6IkVjb21QdWJsaWNBcGkifQ.z5InvbMnj_caGqKi1XXfb2n_lXz68tCkIX9OrKOSdAc
+@customerId=25cdcd62-ee03-4d10-9999-f3343d16cba9
+
+GET {{host}}/customers/{{customerId}}
+Content-Type: application/json
+Authorization: bearer {{token}}

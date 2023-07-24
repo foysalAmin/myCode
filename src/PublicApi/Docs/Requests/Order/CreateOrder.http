@@ -1,0 +1,18 @@
+@host=https://localhost:7008
+
+
+POST {{host}}/customers/create
+Content-Type: application/json
+
+{
+  "paymentRef": "00000000000-0000-0000-000000000000000",
+  "customerId": "d89c2cd9a-eb3e-4075-95ff-b920b55aa104",
+  "ProductId": "00000000000-0000-0000-000000000000000",
+  "street": "any street",
+  "city" : "any city",
+  "state" : "any state",
+  "country" : "any country",
+  "zipcode" : "a11211",
+  "qty": "2",
+  "unitPrice": "1000.00",
+}

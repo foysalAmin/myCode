@@ -1,0 +1,29 @@
+@host=https://localhost:5200
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTRjMjQ2Ny1lNGEyLTRkMzUtOGY4Ni04YWM4NDU1OWZhMTAiLCJnaXZlbl9uYW1lIjoiTWQuIEFyYWZhdCBSYWhtYW4iLCJmYW1pbHlfbmFtZSI6IlJhbmEiLCJqdGkiOiI2ZTE4ZWYzOC01M2NiLTQwZTktOTNjMS04NjNmMWVmMDU5ZWEiLCJleHAiOjE2OTAwMTgyMzgsImlzcyI6IkVjb21QdWJsaWNBcGkiLCJhdWQiOiJFY29tUHVibGljQXBpIn0.4T8euAN_zRyOX7QdFrxSoE0pKOE7Wx8aQVe4yXYQNYQ
+
+
+POST {{host}}/orders/create
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+  "paymentRef": "00000000000-0000-0000-000000000000000",
+  "customerId": "25cdcd62-ee03-4d10-9999-f3343d16cba9",
+  "Email": "azmat@cust.com",
+  "shipToAddress": {
+    "phoneNumber": "+11111154445",
+    "street": "any street",
+    "city" : "any city",
+    "state" : "any state",
+    "country" : "any country",
+    "zipCode" : "a11211"
+  },
+  "Items": [
+    {
+      "productId": "1c383bcd-09f0-44bf-992f-d3ed39bada9e",
+      "currency": "USD",
+      "amount": "1000.00",
+      "qty": "2"
+    }
+  ]
+}

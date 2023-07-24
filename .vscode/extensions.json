@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-dotnettools.csharp",
+    "EditorConfig.editorconfig",
+    "josefpihrt-vscode.roslynator",
+    "humao.rest-client",
+  ]
+}

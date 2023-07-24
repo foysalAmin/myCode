@@ -1,0 +1,7 @@
+@host=https://localhost:5200
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTRjMjQ2Ny1lNGEyLTRkMzUtOGY4Ni04YWM4NDU1OWZhMTAiLCJnaXZlbl9uYW1lIjoiTWQuIEFyYWZhdCBSYWhtYW4iLCJmYW1pbHlfbmFtZSI6IlJhbmEiLCJqdGkiOiJiNjhlYjFkNC0xMjZhLTQ0Y2EtYjk2MC1lOWI0Mzg4YmI1OWQiLCJleHAiOjE2OTAwMDYzODksImlzcyI6IkVjb21QdWJsaWNBcGkiLCJhdWQiOiJFY29tUHVibGljQXBpIn0.oPO18G7fv4MQ5U6kNX2A3SUuxlOksvL5aUkuVWjv7W8
+@id=1c383bcd-09f0-44bf-992f-d3ed39bada9e
+
+GET {{host}}/products/{{id}}
+Content-Type: application/json
+Authorization: bearer {{token}}

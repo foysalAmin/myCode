@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  publicapi:
+    image: ${DOCKER_REGISTRY-}publicapi
+    build:
+      context: .
+      dockerfile: src/PublicApi/Dockerfile
+    depends_on:
+      - "sqlserver"
+  sqlserver:
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: mssql_db
+    environment:
+      MSSQL_SA_PASSWORD: "@root#098@"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
