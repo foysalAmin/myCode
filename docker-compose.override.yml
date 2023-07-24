@@ -4,9 +4,12 @@ services:
   publicapi:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=@root#098@
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/root/.aspnet/https/publicapi.pfx
     ports:
-      - "5200:80"
+      - "5200:443"
+      - "5201:80"
     volumes:
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - "./.aspnet/https:/root/.aspnet/https:ro"
+      - "./.aspnet/DataProtection-Keys:/root/.aspnet/DataProtection-Keys:ro"
