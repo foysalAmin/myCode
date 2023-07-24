@@ -9,7 +9,7 @@ services:
     depends_on:
       - "sqlserver"
   sqlserver:
-    image: mcr.microsoft.com/azure-sql-edge
+    image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: mssql_db
     environment:
       MSSQL_SA_PASSWORD: "@root#098@"
